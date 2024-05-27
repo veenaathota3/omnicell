@@ -1,0 +1,34 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Create an instance of the SampleClass
+        SampleClass sample = new SampleClass();
+
+        // Call a method of SampleClass
+        sample.DisplayMessage();
+
+        // Call a method of SampleClass with parameters
+        int sum = sample.Add(5, 3);
+        Console.WriteLine("The sum of 5 and 3 is: " + sum);
+
+        // Wait for user input before closing the console window
+        Console.ReadLine();
+    }
+}
+
+// Sample class with a method and a property
+class SampleClass
+{
+    public void DisplayMessage()
+    {
+        Console.WriteLine("Hello, this is a sample .NET program!");
+    }
+
+    public int Add(int a, int b)
+    {
+        return a + b;
+    }
+}
